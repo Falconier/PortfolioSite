@@ -260,6 +260,7 @@
     <Content Include="Assets\contactform\readme.txt" />
     <Content Include="Assets\css\scss-files.txt" />
     <Content Include="Assets\css\style.css" />
+    <Content Include="Assets\img\code1.jpg" />
     <Content Include="Assets\img\cover.jpg" />
     <Content Include="Assets\img\gadgets.png" />
     <Content Include="Assets\img\logo-nav.png" />

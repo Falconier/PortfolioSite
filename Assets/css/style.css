@@ -45,7 +45,7 @@ a {
   Elements
   ================================================== */
 .btn {
-  background-color: #199EB8;
+  background-color: #00AEDB;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 800;
   color: #fff;
@@ -54,7 +54,7 @@ a {
 }
 
 .btn:hover {
-  background-color: #E04F00;
+  background-color: #00b159;
   color: #fff;
 }
 
@@ -69,7 +69,7 @@ a {
 
 .btn-ghost:hover {
   background-color: #fff;
-  color: #199EB8;
+  color: #00b159;
 }
 
 section {
@@ -97,7 +97,7 @@ a:hover {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: #199EB8;
+  background: #00AEDB;
   color: #fff;
   text-align: center;
   font-size: 24px;
@@ -114,7 +114,8 @@ a:hover {
 .hero {
   display: table;
   position: relative;
-  background-image: url(../img/cover.jpg);
+  background-image: url(../img/code1.jpg);
+  background-attachment:fixed;
   background-size: cover;
   padding: 150px 0;
   color: #fff;
@@ -162,7 +163,7 @@ a:hover {
   Header Styling
 ================================================== */
 #header {
-  background: #199EB8;
+  background: #00AEDB;
   height: 70px;
 }
 
@@ -323,7 +324,7 @@ a:hover {
 }
 
 .nav-menu ul li:hover {
-  background: #199EB8;
+  background: #00AEDB;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -429,11 +430,11 @@ a:hover {
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #199EB8;
+  color: #00AEDB;
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #199EB8;
+  color: #00AEDB;
 }
 
 #mobile-body-overly {
@@ -474,7 +475,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-weight: 500;
   color: #666;
-  border: 6px solid #199EB8;
+  border: 6px solid #d11141;
   border-radius: 50%;
   padding: 55px 25px 0 25px;
   position: relative;
@@ -489,7 +490,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: -15px;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  background-color: #E04F00;
+  background-color: #333;
   position: absolute;
   border-radius: 50%;
   font-weight: 700;
@@ -523,7 +524,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .features h2 {
-  color: #199EB8;
+  color: #00AEDB;
+}
+
+.features p
+{
+    text-align: center;
+    font-size: 20px;
+    color:black;
+
 }
 
 .feature-col {
@@ -544,7 +553,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 70px;
   height: 70px;
   margin-bottom: 15px;
-  background: #199EB8;
+  background: #00AEDB;
   color: #fff;
   font-size: 24px;
   text-align: center;
@@ -554,7 +563,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .feature-col h3 {
-  color: #199EB8;
+  color: #00AEDB;
 }
 
 .feature-col p {
@@ -567,7 +576,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   Call-to-action Styling
   ================================================== */
 .cta {
-  background-color: #199EB8;
+  background-color: #00AEDB;
   padding: 25px 0;
 }
 
@@ -600,7 +609,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .portfolio h2 {
-  color: #199EB8;
+  color: #00AEDB;
   margin-bottom: 25px;
 }
 
@@ -667,7 +676,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   Team Styling
   ================================================== */
 .team h2 {
-  color: #199EB8;
+  color: #00AEDB;
 }
 
 .team .col-sm-3 {
@@ -715,7 +724,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .team .card:hover .card-title-wrap {
-  background-color: #199EB8;
+  background-color: #00AEDB;
 }
 
 .team .card:hover .card-title-wrap .card-title, .team .card:hover .card-title-wrap .card-text {
@@ -772,12 +781,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact h2 {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
-  color: #199EB8;
+  color: #00AEDB;
 }
 
 #contact .info i {
   font-size: 32px;
-  color: #199EB8;
+  color: #00AEDB;
   float: left;
 }
 
@@ -787,8 +796,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form #sendmessage {
-  color: #199EB8;
-  border: 1px solid #199EB8;
+  color: #00AEDB;
+  border: 1px solid #00AEDB;
   display: none;
   text-align: center;
   padding: 15px;
@@ -825,7 +834,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-  background: #199EB8;
+  background: #00AEDB;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -890,7 +899,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .site-footer .bottom .list-inline a:hover {
-  color: #199EB8;
+  color: #00AEDB;
 }
 
 .site-footer .credits {
@@ -898,7 +907,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .site-footer .credits a {
-  color: #199EB8;
+  color: #00AEDB;
 }
 
 /* ==================================================
@@ -980,3 +989,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-right: 30px;
   }
 }
+
+/*=====================================
+    Featured Project
+    =====================================*/
