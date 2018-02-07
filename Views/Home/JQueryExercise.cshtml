@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "JQueryExercise";
+}
+
+<h2 id="hiddenTitle">JQueryExercise</h2>
+
+<button id="mybutton" onclick="myHideFunction()">Hide</button><br/>
+<button id="mybtn" onclick="myJQueryHide()">JQuery Hide</button><br/>
+<button id="colChng" onclick="changeColour()" >Change Colour</button><br/>
+<button id="szChng" onclick="changeSize()" >Change Size</button><br/>
+<button id="reAln" onclick="reAlign()">Realign</button>
+
+
+
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script>
+    function myHideFunction() {
+        document.getElementById("hiddenTitle").style.display = "none";
+        
+    }
+
+    
+    function myJQueryHide() {
+        $("#hiddenTitle").toggle();
+        //if ($("#mybtn").text == "JQuery Hide") {
+            $("#mybtn").text("JQuery Show");
+            
+        //}
+        
+        //if($("#mybtn").text == "JQuery Show")
+          //  $("#mybtn").text("JQuery Hide");
+            
+        }
+    }
+
+    function changeColour() {
+        $("#hiddenTitle").css('color', 'red');
+    }
+
+    function changeSize() {
+        $("#hiddenTitle").css('font-size', '50px');
+
+    }
+
+    //function reAlign() {
+    //    $("#hiddenTitle").text.position("right");
+    //}
+</script>

@@ -11,5 +11,15 @@ namespace PortfolioSite.Controllers
         {
             return View();
         }
+        public ActionResult JSExercise()
+        {
+            return View();
+        }
+
+        public ActionResult JQueryExercise()
+        {
+            return View();
+        }
+
     }
 }

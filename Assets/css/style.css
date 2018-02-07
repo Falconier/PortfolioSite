@@ -594,7 +594,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   Portfolio Styling
   ================================================== */
 .portfolio {
-  background-color: #edf6ff;
+  /**color: #edf6ff;*/
+  color:#4c6683;
   padding-bottom: 0;
 }
 
@@ -625,7 +626,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   vertical-align: middle;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(76, 102, 131, 0.8);
+  /*background-color:#4c6683;*/
   top: 0;
   left: 0;
   text-align: center;
