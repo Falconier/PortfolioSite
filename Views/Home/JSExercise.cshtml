@@ -41,6 +41,15 @@
 
 <button onclick="factorial()">Factorial</button>
 
+<br/>
+<br/>
+
+<input type="number" id="fBOne" />
+<input type="number" id="fBTwo"  />
+
+<p id="fBResult"></p>
+
+<button onclick="fizzBuzz()">FizzBuzz</button>
 <script>
     function calculator() {
         var val1 = Number(document.getElementById("fNum").value);
@@ -87,13 +96,37 @@
     function factorial() {
         var a = Number(document.getElementById("fac").value);
         var b = a;
-
         var result = 1;
-
         for (a; a != 0; a--) {
             result *= a;
         }
 
         document.getElementById("facResult").innerHTML = result;
+    }
+
+    function fizzBuzz() {
+        var a = Number(fBOne.value);
+        var b = Number(fBTwo.value);
+        var result = "";
+
+        if ((a < 100 && a > 0) && (b < 100 && b > 0)){
+            for (var i = 1; i <= 100; i++) {
+                (function (i) {
+                    setTimeout(function () {
+                        if (i % a == 0 && i % b == 0)
+                            result += "fizzbuzz";
+                        else if (i % a == 0)
+                            result += "fizz";
+                        else if (i % b == 0)
+                            result += "buzz";
+                        else
+                            result += i + " ";
+
+                        document.getElementById("fBResult").innerHTML = result;
+                    }, 500);
+                })(i);
+            }
+       }
+        //document.getElementById("fBResult").innerHTML = result;
     }
 </script>

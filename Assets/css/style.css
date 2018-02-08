@@ -991,5 +991,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*=====================================
-    Featured Project
+    Personal Edits
     =====================================*/
+
+.largeField{
+    background-color: #00AEDB;
+}
