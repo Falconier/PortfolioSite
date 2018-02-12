@@ -25,6 +25,17 @@ namespace PortfolioSite.Controllers
         {
             return View();
         }
-
+        public ActionResult CalculatorExercise()
+        {
+            return View();
+        }
+        public ActionResult NumberGuess()
+        {
+            return View();
+        }
+        public ActionResult AlarmClock()
+        {
+            return View();
+        }
     }
 }

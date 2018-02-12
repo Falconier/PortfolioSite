@@ -279,7 +279,10 @@
     <Content Include="Assets\img\team-3.jpg" />
     <Content Include="Assets\img\team-4.jpg" />
     <Content Include="Views\Home\AdvancedJSandJQueryExercise.cshtml" />
-    <None Include="Views\Home\index.cshtml" />
+    <Content Include="Views\Home\CalculatorExercise.cshtml" />
+    <Content Include="Views\Home\AlarmClock.cshtml" />
+    <None Include="Properties\PublishProfiles\JacobBullinPortfolioSite - Web Deploy.pubxml" />
+    <Content Include="Views\Home\index.cshtml" />
     <Content Include="Assets\js\custom.js" />
     <Content Include="Assets\lib\bootstrap\css\bootstrap.css" />
     <Content Include="Assets\lib\bootstrap\css\bootstrap.min.css" />
@@ -447,6 +450,7 @@
     </Content>
     <Content Include="Views\Home\JSExercise.cshtml" />
     <Content Include="Views\Home\JQueryExercise.cshtml" />
+    <Content Include="Views\Home\NumberGuess.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

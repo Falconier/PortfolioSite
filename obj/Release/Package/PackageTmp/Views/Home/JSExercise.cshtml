@@ -1,0 +1,132 @@
+﻿
+@{
+    ViewBag.Title = "JSExercise";
+}
+
+<h2>JSExercise</h2>
+
+<input type="number" id="fNum" /> <p>+</p> <input type="number" id="sNum" /> <p>/</p> <input type="number" id="tNum" /> <br />
+<p>=</p> <p id="ans"></p>
+
+<button onclick="calculator()">Calculate</button>
+
+<br />
+<br />
+<input type="number" id="starting" placeholder="Enter Starting Number" />
+<input type="number" id="ending" placeholder="Enter Ending Number" />
+
+<p id="lst"></p>
+
+<button onclick="iterator()">Display</button>
+
+<br />
+<br />
+
+<input type="number" id="v1" />
+<input type="number" id="v2" />
+<input type="number" id="v3" />
+<input type="number" id="v4" />
+<input type="number" id="v5" />
+
+<p id="list2"></p>
+
+<button onclick="nthf()">Evaluate</button>
+
+<br/>
+<br/>
+
+<input type="number" id="fac" />
+
+<p id="facResult"></p>
+
+<button onclick="factorial()">Factorial</button>
+
+<br/>
+<br/>
+
+<input type="number" id="fBOne" />
+<input type="number" id="fBTwo"  />
+
+<p id="fBResult"></p>
+
+<button onclick="fizzBuzz()">FizzBuzz</button>
+<script>
+    function calculator() {
+        var val1 = Number(document.getElementById("fNum").value);
+        var val2 = Number(document.getElementById("sNum").value);
+        var val3 = Number(document.getElementById("tNum").value);
+
+        document.getElementById("ans").innerHTML = (val1 + val2) / val3;
+    }
+
+    function iterator() {
+        var start = Number(document.getElementById("starting").value);
+        var end = Number(document.getElementById("ending").value);
+        var list = "";
+
+        for (var i = start; i < end; i += 1) {
+            list += i + " ";
+        }
+
+        document.getElementById("lst").innerHTML = list;
+    }
+
+   
+</script>
+
+<script>
+    function nthf() {
+        var one = Number(document.getElementById("v1").value);
+        var two = Number(document.getElementById("v2").value);
+        var three = Number(document.getElementById("v3").value);
+        var four = Number(document.getElementById("v4").value);
+        var five = Number(document.getElementById("v5").value);
+
+        
+
+        var min = Math.min(one, two, three, four, five);
+        var max = Math.max(one, two, three, four, five);
+        var sum = one + two + three + four + five;
+        var avg = sum / 5;
+        var product = one * two * three * four * five;
+
+        document.getElementById("list2").innerHTML = "Min: " + min + " Max: " + max + " Average: " + avg + " Sum: " + sum + " Product: " + product;
+    }
+
+    function factorial() {
+        var a = Number(document.getElementById("fac").value);
+        var b = a;
+        var result = 1;
+        for (a; a != 0; a--) {
+            result *= a;
+        }
+
+        document.getElementById("facResult").innerHTML = result;
+    }
+
+    function fizzBuzz() {
+        var a = Number(fBOne.value);
+        var b = Number(fBTwo.value);
+        var result = "";
+
+        if ((a < 100 && a > 0) && (b < 100 && b > 0)){
+            for (var i = 1; i <= 100; i++) {
+                (function (i) {
+                    setTimeout(function () {
+                        if (i % a == 0 && i % b == 0)
+                            result += "fizzbuzz";
+                        else if (i % a == 0)
+                            result += "fizz";
+                        else if (i % b == 0)
+                            result += "buzz";
+                        else
+                            result += i + " ";
+
+                        document.getElementById("fBResult").innerHTML = result;
+                    }, 500);
+                })(i);
+            }
+       }
+        //document.getElementById("fBResult").innerHTML = result;
+    }
+</script>
