@@ -258,6 +258,7 @@
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
     <Content Include="Assets\contactform\contactform.js" />
     <Content Include="Assets\contactform\readme.txt" />
+    <Content Include="Assets\css\CustomStyle.css" />
     <Content Include="Assets\css\scss-files.txt" />
     <Content Include="Assets\css\style.css" />
     <Content Include="Assets\img\code1.jpg" />

@@ -39,6 +39,8 @@
 
     <!-- Main Stylesheet File -->
     <link href="~/Assets/css/style.css" rel="stylesheet">
+    
+    <link href="~/Assets/css/CustomStyle.css" rel="stylesheet" />""
 
     <!-- Syntax Highlighter -->
 
@@ -91,12 +93,15 @@
                 <!--<h1><a href="#hero">Bell</a></h1>-->
             </div>
 
+
+        <!-- Navigation Bar -->
+
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
                     <li><a href="#about">About</a></li>
                     <li><a href="#features">Current Project</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#team">Other Works</a></li>
+                    @*<li><a href="#team">Other Works</a></li>*@
                     <!---<li class="menu-has-children"><a href="">Drop Down</a>
                       <ul>
                         <li><a href="#">Drop Down 1</a></li>
@@ -115,14 +120,14 @@
                       </ul>
                       -->
                     </li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    @*<li><a href="#contact">Contact Us</a></li>*@
                 </ul>
             </nav>
             <!-- #nav-menu-container -->
 
-            <nav class="nav social-nav pull-right d-none d-lg-inline">
+            @*<nav class="nav social-nav pull-right d-none d-lg-inline">
                 <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-            </nav>
+            </nav>*@
         </div>
     </header>
     <!-- #header -->
@@ -135,7 +140,7 @@
             </h2>
 
             <p>
-                I am an up and coming developer who is takinga a course at Core Techs
+                I am an up and coming developer who is taking a course at Core Techs
             </p>
 
             <!--<div class="row stats-row">
@@ -192,24 +197,73 @@
             </p>
         </div>
 
+        <!--Modal-->
+       
+        
+
+
+        <!-- Portfolio Image Link Grid -->
         <div class="portfolio-grid">
             <div class="row">
                 <div class="col-lg-3 col-sm-6 col-xs-12">
-                    <div class="card card-block">
-                        <a href="#">
-                            <img alt="" src="~/Assets/img/porf-1.jpg">
-                            <div class="portfolio-over">
-                                <div>
-                                    <h3 class="card-title">
-                                        This Website
-                                    </h3>
+                    <div class="card card-block" data-toggle="modal" data-target="#myModal">
+                        <!-- This Image -->
+                        <img alt="" src="~/Assets/img/porf-1.jpg">
+                        <div class="portfolio-over">
+                            <div>
 
-                                    <p class="card-text">
-                                        Work In Progress
-                                    </p>
+                                <h3 class="card-title">
+                                    JavaScript Exercises
+                                </h3>
+
+                                <p class="card-text">
+                                    Work In Progress
+                                </p>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">JavaScript Exercises</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="nav nav-pills">
+                                        <li class="active col-md-2"><a href="#pickFive" data-toggle="pill" data-target="#pickFive" >Evaluation</a></li>
+                                        <li class="col-md-2"><a data-toggle="pill" href="#factorial"></a></li>
+                                        <li class="col-md-2"><a data-toggle="pill" href="#fizzBuzz"></a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <!-- pick five -->
+                                        <div id="pickFive" class="tab-pane fade in active row">
+                                                <input type="number" id="v1" />
+                                                <input type="number" id="v2" />
+                                                <input type="number" id="v3" />
+                                                <input type="number" id="v4" />
+                                                <input type="number" id="v5" />
+
+                                            <p id="list2"></p>
+
+                                            <button onclick="pickFive()">Evaluate</button>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
-                        </a>
+
+                        </div>
                     </div>
                 </div>
 
@@ -601,6 +655,26 @@
     <script src="~/Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
     <script>
         SyntaxHighlighter.all();
+    </script>
+
+    <!-- Functions -->
+    <script>
+        function pickFive() {
+            var one = Number(document.getElementById("v1").value);
+            var two = Number(document.getElementById("v2").value);
+            var three = Number(document.getElementById("v3").value);
+            var four = Number(document.getElementById("v4").value);
+            var five = Number(document.getElementById("v5").value);
+
+
+
+            var min = Math.min(one, two, three, four, five);
+            var max = Math.max(one, two, three, four, five);
+            var sum = one + two + three + four + five;
+            var avg = sum / 5;
+            var product = one * two * three * four * five;
+
+            document.getElementById("list2").innerHTML = "Min: " + min + " Max: " + max + " Average: " + avg + " Sum: " + sum + " Product: " + product;
     </script>
 
 </body>
