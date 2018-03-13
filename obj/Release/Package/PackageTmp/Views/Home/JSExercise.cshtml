@@ -30,7 +30,7 @@
 
 <p id="list2"></p>
 
-<button onclick="nthf()">Evaluate</button>
+<button onclick="pickFive()">Evaluate</button>
 
 <br/>
 <br/>
@@ -75,7 +75,7 @@
 </script>
 
 <script>
-    function nthf() {
+    function pickFive() {
         var one = Number(document.getElementById("v1").value);
         var two = Number(document.getElementById("v2").value);
         var three = Number(document.getElementById("v3").value);
@@ -109,6 +109,7 @@
         var b = Number(fBTwo.value);
         var result = "";
 
+        // review if statements and simplification
         if ((a < 100 && a > 0) && (b < 100 && b > 0)){
             for (var i = 1; i <= 100; i++) {
                 (function (i) {

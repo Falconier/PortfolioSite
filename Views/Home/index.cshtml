@@ -1,66 +1,7 @@
-﻿@{ 
-    Layout = null;
-}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Portfolio</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
-    <meta property="og:title" content="">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:description" content="">
-
-    <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
-
-    <!-- Bootstrap CSS File -->
-    <link href="~/Assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Libraries CSS Files -->
-    <link href="~/Assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Main Stylesheet File -->
-    <link href="~/Assets/css/style.css" rel="stylesheet">
-    
-    <link href="~/Assets/css/CustomStyle.css" rel="stylesheet" />""
-
-    <!-- Syntax Highlighter -->
-
-    <link href="~/Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
-    <link href="~/Content/SyntaxHighlighter/shCoreEclipse.css" rel="stylesheet" />
-    <link href="~/Content/SyntaxHighlighter/shThemeEclipse.css" rel="stylesheet" />
-
-    <!-- =======================================================
-      Theme Name: Bell
-      Theme URL: https://bootstrapmade.com/bell-free-bootstrap-4-template/
-      Author: BootstrapMade.com
-      Author URL: https://bootstrapmade.com
-    ======================================================= -->
-</head>
-
-<body>
+﻿
     <!-- Page Content
       ================================================== -->
     <!-- Hero -->
-
     <section class="hero">
         <div class="container text-center">
             <div class="row">
@@ -83,6 +24,7 @@
 
     </section>
     <!-- /Hero -->
+
     <!-- Header -->
     <header id="header">
         <div class="container">
@@ -131,8 +73,8 @@
         </div>
     </header>
     <!-- #header -->
-    <!-- About -->
 
+    <!-- About -->
     <section class="about" id="about">
         <div class="container text-center">
             <h2>
@@ -171,8 +113,8 @@
         </div>
     </section>
     <!-- /About -->
-    <!-- Features -->
 
+    <!-- Features -->
     <section class="features" id="features">
         <div class="container">
             <h2 class="text-center">
@@ -184,8 +126,8 @@
         </div>
     </section>
     <!-- /Features -->
-    <!-- Portfolio -->
 
+    <!-- Portfolio -->
     <section class="portfolio" id="portfolio">
         <div class="container text-center">
             <h2>
@@ -210,7 +152,7 @@
                         <!-- This Image -->
                         <img alt="" src="~/Assets/img/porf-1.jpg">
                         <div class="portfolio-over">
-                            <div>
+                            <div >
 
                                 <h3 class="card-title">
                                     JavaScript Exercises
@@ -238,12 +180,10 @@
                                 <div class="modal-body">
                                     <ul class="nav nav-pills">
                                         <li class="active col-md-2"><a href="#pickFive" data-toggle="pill" data-target="#pickFive" >Evaluation</a></li>
-                                        <li class="col-md-2"><a data-toggle="pill" href="#factorial"></a></li>
-                                        <li class="col-md-2"><a data-toggle="pill" href="#fizzBuzz"></a></li>
                                     </ul>
                                     <div class="tab-content">
                                         <!-- pick five -->
-                                        <div id="pickFive" class="tab-pane fade in active row">
+                                        <div id="pickFive" class="tab-pane active row">
                                                 <input type="number" id="v1" />
                                                 <input type="number" id="v2" />
                                                 <input type="number" id="v3" />
@@ -406,277 +346,14 @@
     </section>
     <!-- /Portfolio -->
     
-   
-    <!-- Team -->
-    @*<section class="team" id="team">
-          <div class="container">
-            <h2 class="text-center">
-                Meet our team
-              </h2>
-
-            <div class="row">
-              <div class="col-sm-3 col-xs-6">
-                <div class="card card-block">
-                  <a href="#"><img alt="" class="team-img" src="~/Assets/img/team-1.jpg">
-                    <div class="card-title-wrap">
-                      <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-                    </div>
-
-                    <div class="team-over">
-                      <h4 class="hidden-md-down">
-                        Connect with me
-                      </h4>
-
-                      <nav class="social-nav">
-                        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-                  </nav>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
-                </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-              <div class="card card-block">
-                <a href="#"><img alt="" class="team-img" src="~/Assets/img/team-2.jpg">
-                    <div class="card-title-wrap">
-                      <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-                    </div>
-
-                    <div class="team-over">
-                      <h4 class="hidden-md-down">
-                        Connect with me
-                      </h4>
-
-                      <nav class="social-nav">
-                        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-                </nav>
-
-                <p>
-                  Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                </p>
-              </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <div class="card card-block">
-              <a href="#"><img alt="" class="team-img" src="~/Assets/img/team-3.jpg">
-                    <div class="card-title-wrap">
-                      <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-                    </div>
-
-                    <div class="team-over">
-                      <h4 class="hidden-md-down">
-                        Connect with me
-                      </h4>
-
-                      <nav class="social-nav">
-                        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-              </nav>
-
-              <p>
-                Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-              </p>
-            </div>
-            </a>
-          </div>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <div class="card card-block">
-              <a href="#"><img alt="" class="team-img" src="~/Assets/img/team-4.jpg">
-                    <div class="card-title-wrap">
-                      <span class="card-title">Sergio Fez</span> <span class="card-text">Art Director</span>
-                    </div>
-
-                    <div class="team-over">
-                      <h4 class="hidden-md-down">
-                        Connect with me
-                      </h4>
-
-                      <nav class="social-nav">
-                        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-              </nav>
-
-              <p>
-                Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-              </p>
-            </div>
-            </a>
-          </div>
-          </div>
-          </div>
-          </div>
-        </section>
-        <!-- /Team -->
-        <!-- component: footer -->
-
-        <section id="contact">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <h2 class="section-title">Contact Us</h2>
-              </div>
-            </div>
-
-            <div class="row justify-content-center">
-              <div class="col-lg-3 col-md-4">
-                <div class="info">
-                  <div>
-                    <i class="fa fa-map-marker"></i>
-                    <p>A108 Adam Street<br>New York, NY 535022</p>
-                  </div>
-
-                  <div>
-                    <i class="fa fa-envelope"></i>
-                    <p>info@example.com</p>
-                  </div>
-
-                  <div>
-                    <i class="fa fa-phone"></i>
-                    <p>+1 5589 55488 55s</p>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-lg-5 col-md-8">
-                <div class="form">
-                  <div id="sendmessage">Your message has been sent. Thank you!</div>
-                  <div id="errormessage"></div>
-                  <form action="" method="post" role="form" class="contactForm">
-                    <div class="form-group">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                      <div class="validation"></div>
-                    </div>
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                      <div class="validation"></div>
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                      <div class="validation"></div>
-                    </div>
-                    <div class="form-group">
-                      <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                      <div class="validation"></div>
-                    </div>
-                    <div class="text-center"><button type="submit">Send Message</button></div>
-                  </form>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </section>
-    *@
-    <footer class="site-footer">
-        <div class="bottom">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-6 col-xs-12 text-lg-left text-center">
-                        <p class="copyright-text">
-                            
-                        </p>
-                        <div class="credits">
-                            <!--
-                              All the links in the footer should remain intact.
-                              You can delete the links only if you purchased the pro version.
-                              Licensing information: https://bootstrapmade.com/license/
-                              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bell
-                            -->
-                            
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-xs-12 text-lg-right text-center">
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a href="index.html">Home</a>
-                            </li>
-
-                            <li class="list-inline-item">
-                                <a href="#about">About Us</a>
-                            </li>
-
-                            <li class="list-inline-item">
-                                <a href="#features">Features</a>
-                            </li>
-
-                            <li class="list-inline-item">
-                                <a href="#portfolio">Portfolio</a>
-                            </li>
-
-                            <li class="list-inline-item">
-                                <a href="#team">Team</a>
-                            </li>
-
-                            <li class="list-inline-item">
-                                <a href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </footer>
-    <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
-
-
-    <!-- Required JavaScript Libraries -->
-    <script src="~/Assets/lib/jquery/jquery.min.js"></script>
-    <script src="~/Assets/lib/jquery/jquery-migrate.min.js"></script>
-    <script src="~/Assets/lib/superfish/hoverIntent.js"></script>
-    <script src="~/Assets/lib/superfish/superfish.min.js"></script>
-    <script src="~/Assets/lib/tether/js/tether.min.js"></script>
-    <script src="~/Assets/lib/stellar/stellar.min.js"></script>
-    <script src="~/Assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="~/Assets/lib/counterup/counterup.min.js"></script>
-    <script src="~/Assets/lib/waypoints/waypoints.min.js"></script>
-    <script src="~/Assets/lib/easing/easing.js"></script>
-    <script src="~/Assets/lib/stickyjs/sticky.js"></script>
-    <script src="~/Assets/lib/parallax/parallax.js"></script>
-    <script src="~/Assets/lib/lockfixed/lockfixed.min.js"></script>
-
-    <!-- Template Specisifc Custom Javascript File -->
-    <script src="~/Assets/js/custom.js"></script>
-
-    <script src="~/Assets/contactform/contactform.js"></script>
-
-    <!-- Syntax Highlighter-->
-    <script src="~/Scripts/SyntaxHighlighter/shCore.js"></script>
-    <script src="~/Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
-    <script>
-        SyntaxHighlighter.all();
-    </script>
-
-    <!-- Functions -->
-    <script>
-        function pickFive() {
-            var one = Number(document.getElementById("v1").value);
-            var two = Number(document.getElementById("v2").value);
-            var three = Number(document.getElementById("v3").value);
-            var four = Number(document.getElementById("v4").value);
-            var five = Number(document.getElementById("v5").value);
-
-
-
-            var min = Math.min(one, two, three, four, five);
-            var max = Math.max(one, two, three, four, five);
-            var sum = one + two + three + four + five;
-            var avg = sum / 5;
-            var product = one * two * three * four * five;
-
-            document.getElementById("list2").innerHTML = "Min: " + min + " Max: " + max + " Average: " + avg + " Sum: " + sum + " Product: " + product;
+<script src="~/Assets/lib/jquery/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#clickme").click();
+        if ($(".tab-content").is("visible")) {
+            $("#pickfive").css("background-color:", "black");
         }
-    </script>
-
-</body>
-</html>
+    });
+</script>
+   
+    
