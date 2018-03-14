@@ -208,8 +208,8 @@
                 </div>
 
                 <div class="col-lg-3 col-sm-6 col-xs-12">
-                    <div class="card card-block">
-                        <a href="#">
+                    <div class="card card-block" data-toggle="modal" data-target="#myModal2">
+                        
                             <img alt="" src="~/Assets/img/porf-2.jpg">
                             <div class="portfolio-over">
                                 <div>
@@ -222,8 +222,43 @@
                                     </p>
                                 </div>
                             </div>
-                        </a>
+                        
                     </div>
+                    <div id="myModal2" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">JavaScript Exercises</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="nav nav-pills">
+                                        <li class="active col-md-2"><a href="#pickFive" data-toggle="pill" data-target="#fizzBuzz">Evaluation</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <!-- fizz buzz -->
+                                        <div id="fizzBuzz" class="tab-pane active row">
+                                            <input type="number" id="fBOne" />
+                                            <input type="number" id="fBTwo" />
+
+                                            <p id="fBResult"></p>
+
+                                            <button onclick="fizzBuzz()">Evaluate FizzBuzz</button>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="col-lg-3 col-sm-6 col-xs-12">
