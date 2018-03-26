@@ -1,13 +1,17 @@
-﻿.modal-content{
+﻿/*.modal-content{
     color:green;
 }
 
 .modal-body{
-    /*color:red;*/
-    background-color:lightslategray;
+    /*color:red;
+    background-color:white;
 
 }
 
 .pickFive{
 
+}*/
+
+.blackground {
+    background-color: black;
 }
