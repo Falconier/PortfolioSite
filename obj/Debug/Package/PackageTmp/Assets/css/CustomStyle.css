@@ -15,3 +15,15 @@
 .blackground {
     background-color: black;
 }
+
+.btn 
+{
+    background-color: #006633;
+    /*background-color: #003333, 006633, 009933*/
+}
+
+.btn :hover
+{
+    background-color: #003333;
+    color: #fff;
+}
