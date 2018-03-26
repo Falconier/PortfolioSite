@@ -2,6 +2,49 @@
     ViewBag.Title = "Coming Soon";
 }
 
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+    .bgimg {
+        background-image: url('../../Assets/img/DSC_0304.JPG');
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 25px;
+    }
+
+    .topleft {
+        position: absolute;
+        top: 0;
+        left: 16px;
+    }
+
+    .bottomleft {
+        position: absolute;
+        bottom: 0;
+        left: 16px;
+    }
+
+    .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+
+    hr {
+        margin: auto;
+        width: 40%;
+    }
+</style>
 <div class="bgimg">
     <div class="topleft">
         <p>Jacob Emory Bullin</p>
@@ -9,38 +52,41 @@
     <div class="middle">
         <h1>COMING SOON</h1>
         <hr>
-        <p id="countDown"></p>
+        <p id="countDown" style="color:white;"></p>
     </div>
+    <!--
     <div class="bottomleft">
         <p>Some text</p>
-    </div>
+    </div> -->
 </div>
 @section scripts
 {
-    var countDownDate = new Date("Apr 27, 2018 23:59:59").getTime();
+    <script>
+        var countDownDate = new Date("Apr 7, 2018 23:59:59").getTime();
 
-    // Update the count down every 1 second
-    var x = setInterval(function () {
+        // Update the count down every 1 second
+        var x = setInterval(function () {
 
-        // Get todays date and time
-        var now = new Date().getTime();
+            // Get todays date and time
+            var now = new Date().getTime();
 
-        // Find the distance between now an the count down date
-        var distance = countDownDate - now;
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
 
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        document.getElementById("countDown").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
+            document.getElementById("countDown").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
 
-        // If the count down is finished, write some text 
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countDown").innerHTML = "EXPIRED";
-        }
-    }, 1000);
+            // If the count down is finished, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countDown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
 }

@@ -148,8 +148,6 @@
             var four = Number(document.getElementById("v4").value);
             var five = Number(document.getElementById("v5").value);
 
-
-
             var min = Math.min(one, two, three, four, five);
             var max = Math.max(one, two, three, four, five);
             var sum = one + two + three + four + five;
@@ -186,5 +184,6 @@
         }
 
     </script>
+    @RenderSection("scripts", required: false)
 </body>
 </html>

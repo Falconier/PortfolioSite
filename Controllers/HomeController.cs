@@ -16,6 +16,11 @@ namespace PortfolioSite.Controllers
         {
             return View();
         }
+
+        public ActionResult ComingSoonFinancialPlanner()
+        {
+            return View();
+        }
         public ActionResult JSExercise()
         {
             return View();

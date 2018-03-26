@@ -263,6 +263,9 @@
     <Content Include="Assets\css\style.css" />
     <Content Include="Assets\img\code1.jpg" />
     <Content Include="Assets\img\cover.jpg" />
+    <Content Include="Assets\img\DSC_0209.jpg" />
+    <Content Include="Assets\img\DSC_0209.NEF" />
+    <Content Include="Assets\img\DSC_0304.JPG" />
     <Content Include="Assets\img\gadgets.png" />
     <Content Include="Assets\img\logo-nav.png" />
     <Content Include="Assets\img\logo.png" />
@@ -453,6 +456,7 @@
     <Content Include="Views\Home\JSExercise.cshtml" />
     <Content Include="Views\Home\JQueryExercise.cshtml" />
     <Content Include="Views\Home\NumberGuess.cshtml" />
+    <Content Include="Views\Home\ComingSoonFinancialPlanner.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
