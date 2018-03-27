@@ -203,8 +203,31 @@
                 document.getElementById("facResult").innerHTML = result;
             }
         }
-
     </script>
+    @*<script>
+        $(function () {
+            resetBackgroundImage();
+
+            $(window).resize(function () {
+                resetBackgroundImage();
+            });
+
+            function resetBackgroundImage() {
+                var xShift = 0;
+                var yShift = 0;
+                var windowX = $(window).width();
+                var windowY = $(window).height();
+                xShift = (6000-(windowX / 2)) + 'px';
+                yShift = (4000 - (windowY / 2)) + 'px';
+
+                xShift = 6000 - xShift;
+                yShift = 4000 - yShift;
+
+                $('.hero').css({ 'margin-left': xShift, 'margin-top': yShift });
+                
+            }
+        });
+    </script>*@
     @RenderSection("scripts", required: false)
 </body>
 </html>

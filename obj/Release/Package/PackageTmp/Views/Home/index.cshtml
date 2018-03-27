@@ -1,7 +1,7 @@
 ﻿<!-- Page Content
   ================================================== -->
 <!-- Hero -->
-<section class="hero">
+<section class="hero bkImg">
     <div class="container text-center">
         <div class="row">
             <div class="col-md-12">
@@ -169,24 +169,31 @@
                                 <h4 class="modal-title">JavaScript Exercises</h4>
                             </div>
                             <div class="modal-body">
-                                
+
                                 <div id="pickFive" class="tab-pane active row">
                                     <div class="col-lg-6 form-group">
                                         <input type="number" id="v1" placeholder="blah" class="form-control" />
                                     </div>
                                     <div class="col-lg-6 form-group">
-                                        <input type="number" id="v2" placeholder="blah" class="form-control" /></div>
-                                        <input type="number" id="v3" placeholder="blah" class="form-control col-sm-6" />
-                                        <input type="number" id="v4" placeholder="blah" class="form-control col-sm-6" />
-                                        <input type="number" id="v5" placeholder="blah" class="form-control col-sm-6" />
+                                        <input type="number" id="v2" placeholder="blah" class="form-control" />
+                                    </div>
+                                    <div class="col-lg-6 form-group">
+                                        <input type="number" id="v3" placeholder="blah" class="form-control" />
+                                    </div>
+                                    <div class="col-lg-6 form-group">
+                                        <input type="number" id="v4" placeholder="blah" class="form-control" />
+                                    </div>
+                                    <div class="col-lg-6 form-group">
+                                        <input type="number" id="v5" placeholder="blah" class="form-control" />
+                                    </div>
 
-                                        <p id="list2"></p>
-                                    </div>
-                                    <div>
-                                        <button onclick="pickFive()">Evaluate</button>
-                                    </div>
-                                    <div id="pickFiveCode">
-                                        <pre class="brush: js">
+                                    <p id="list2"></p>
+                                </div>
+                                <div>
+                                    <button onclick="pickFive()">Evaluate</button>
+                                </div>
+                                <div id="pickFiveCode">
+                                    <pre class="brush: js">
                                 function pickFive() {
                                 var one = Number(document.getElementById("v1").value);
                                 var two = Number(document.getElementById("v2").value);
@@ -203,8 +210,8 @@
                                 document.getElementById("list2").innerHTML = "Min: " + min + " Max: " + max + " Average: " + avg + " Sum: " + sum + " Product: " + product;
                                 }
                                     </pre>
-                                    </div>
                                 </div>
+                            </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
@@ -232,7 +239,7 @@
 
                 </div>
                 <div id="myModal2" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-lg">
 
                         <!-- Modal content-->
                         <div class="modal-content">
@@ -255,6 +262,39 @@
                                         <button onclick="fizzBuzz()">Evaluate FizzBuzz</button>
 
 
+                                    </div>
+                                    <div id="fizzBuzzCode">
+                                        <pre class="brush: js">
+                                        <div id="pickFiveCode">
+                                        <pre class="brush: js">
+                                        function fizzBuzz() {
+                                        var a = Number(fBOne.value);
+                                        var b = Number(fBTwo.value);
+                                        var result = "";
+
+                                        // review if statements and simplification
+                                        if ((a < 100 && a > 0) && (b < 100 && b > 0)){
+                                            for (var i = 1; i <= 100; i++) {
+                                                (function (i) {
+                                                    setTimeout(function () {
+                                                        if (i % a == 0 && i % b == 0)
+                                                            result += "fizzbuzz";
+                                                        else if (i % a == 0)
+                                                            result += "fizz";
+                                                        else if (i % b == 0)
+                                                            result += "buzz";
+                                                        else
+                                                            result += i + " ";
+
+                                                        document.getElementById("fBResult").innerHTML = result;
+                                                    }, 500);
+                                                })(i);
+                                            }
+                                       }
+                                    }
+                                    </pre>
+                                </div>
+                                    </pre>
                                     </div>
                                 </div>
                             </div>
@@ -286,7 +326,7 @@
 
                 </div>
                 <div id="myModal3" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-lg">
 
                         <!-- Modal content-->
                         <div class="modal-content">
@@ -339,7 +379,7 @@
 
                 </div>
                 <div id="myModal4" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-lg">
 
                         <!-- Modal content-->
                         <div class="modal-content">
