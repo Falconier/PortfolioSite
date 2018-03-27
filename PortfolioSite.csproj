@@ -287,7 +287,7 @@
     <Content Include="Views\Home\AlarmClock.cshtml" />
     <None Include="Properties\PublishProfiles\JacobBullinPortfolioSite - Web Deploy.pubxml" />
     <Content Include="Views\Home\ComingSoon.cshtml" />
-    <Content Include="Views\Home\index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Assets\js\custom.js" />
     <Content Include="Assets\lib\bootstrap\css\bootstrap.css" />
     <Content Include="Assets\lib\bootstrap\css\bootstrap.min.css" />

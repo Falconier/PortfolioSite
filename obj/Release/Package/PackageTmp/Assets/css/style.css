@@ -5,7 +5,7 @@
     Author URL: https://bootstrapmade.com
 */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-fam;ily: "Raleway", Helvetica, Arial, sans-serif;
 }
 
 p {
@@ -49,8 +49,9 @@ a {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 800;
   color: #fff;
-  padding: 15px 45px;
+  padding: 20px 40px;
   border-radius: 50px;
+  margin: 25px;
 }
 
 .btn:hover {
@@ -90,17 +91,17 @@ a:hover {
 }
 
 .scrolltop {
-  display: none;
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: #00AEDB;
-  color: #fff;
-  text-align: center;
-  font-size: 24px;
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #006633;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
 }
 
 .scrolltop:hover, .scrolltop:active, .scrolltop:focus {
@@ -163,8 +164,8 @@ a:hover {
   Header Styling
 ================================================== */
 #header {
-  background: #00AEDB;
-  height: 70px;
+    background: #006633;
+    height: 70px;
 }
 
 #header #logo {
@@ -324,7 +325,7 @@ a:hover {
 }
 
 .nav-menu ul li:hover {
-  background: #00AEDB;
+  background: #006633;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -429,13 +430,13 @@ a:hover {
   color: #fff;
 }
 
-#mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #00AEDB;
-}
+    #mobile-nav ul .menu-has-children i.fa-chevron-up {
+        color: #006633;
+    }
 
-#mobile-nav ul .menu-item-active {
-  color: #00AEDB;
-}
+    #mobile-nav ul .menu-item-active {
+        color: #006633;
+    }
 
 #mobile-body-overly {
   width: 100%;
@@ -524,7 +525,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .features h2 {
-  color: #00AEDB;
+   color: ##006633;
 }
 
 .features p
@@ -603,14 +604,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   Portfolio Styling
   ================================================== */
 .portfolio {
-  /**color: #edf6ff;*/
-  color:#4c6683;
-  padding-bottom: 0;
+    /**color: #edf6ff;*/
+    color: #006633;
+    padding-bottom: 0;
 }
 
 .portfolio h2 {
-  color: #00AEDB;
-  margin-bottom: 25px;
+     color: #006633;
+     margin-bottom: 25px;
 }
 
 .portfolio-grid {
