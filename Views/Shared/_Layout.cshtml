@@ -180,7 +180,28 @@
                     })(i);
                 }
             }
+            else {
+                document.getElementById("fBResult").innerHTML = "Please enter numbers between 1 and 99 only";
+            }
             //document.getElementById("fBResult").innerHTML = result;
+        }
+        function factorial() {
+            var a = Number(document.getElementById("fac").value);
+            if (a < 0) {
+                document.getElementById("facResult").innerHTML = "Please enter positive numbers only";
+            }
+            else if (a == 0) {
+                document.getElementById("facResult").innerHTML = 1;
+            }
+            else {
+                var b = a;
+                var result = 1;
+                for (a; a != 0; a--) {
+                    result *= a;
+                }
+
+                document.getElementById("facResult").innerHTML = result;
+            }
         }
 
     </script>
