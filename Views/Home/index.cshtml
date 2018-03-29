@@ -166,7 +166,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">JavaScript Exercises</h4>
+                                <h4 class="modal-title">Pick Five JavaScript Exercise</h4>
                             </div>
                             <div class="modal-body">
 
@@ -228,7 +228,7 @@
                     <div class="portfolio-over">
                         <div>
                             <h3 class="card-title">
-                                FizzBuzz
+                                Fizz Buzz
                             </h3>
 
                             <p class="card-text">
@@ -245,13 +245,10 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">JavaScript Exercises</h4>
+                                <h4 class="modal-title">Fizz Buzz JavaScript Exercise</h4>
                             </div>
                             <div class="modal-body">
-                                <ul class="nav nav-pills">
-                                    <li class="active col-md-2"><a href="#pickFive" data-toggle="pill" data-target="#fizzBuzz">Evaluation</a></li>
-                                </ul>
-                                <div class="tab-content">
+                                
                                     <!-- fizz buzz -->
                                     <div id="fizzBuzz" class="tab-pane active row">
                                         <input type="number" id="fBOne" />
@@ -264,8 +261,6 @@
 
                                     </div>
                                     <div id="fizzBuzzCode">
-                                        <pre class="brush: js">
-                                        <div id="pickFiveCode">
                                         <pre class="brush: js">
                                         function fizzBuzz() {
                                         var a = Number(fBOne.value);
@@ -294,9 +289,7 @@
                                     }
                                     </pre>
                                 </div>
-                                    </pre>
-                                    </div>
-                                </div>
+                                
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -345,9 +338,23 @@
 
                                         <p id="facResult"></p>
 
-                                        <button onclick="factorial()">Factorial</button>
+                                        <button onclick="factorial()">Evaluate Factorial</button>
 
 
+                                    </div>
+                                    <div id="fizzBuzzCode">
+                                        <pre class="brush: js">
+                                            function factorial() {
+                                                var a = Number(document.getElementById("fac").value);
+                                                var b = a;
+                                                var result = 1;
+                                                for (a; a != 0; a--)   
+                                                {
+                                                    result *= a;
+                                                }
+                                                document.getElementById("facResult").innerHTML = result;
+                                            }
+                                        </pre>
                                     </div>
                                 </div>
                             </div>
@@ -364,7 +371,7 @@
             <div class="col-lg-3 col-sm-6 col-xs-12">
                 <div class="card card-block" data-toggle="modal" data-target="#myModal4">
 
-                    <img alt="" src="~/Assets/img/porf-2.jpg">
+                    <img alt="" src="~/Assets/img/porf-4.jpg">
                     <div class="portfolio-over">
                         <div>
                             <h3 class="card-title">
@@ -388,22 +395,41 @@
                                 <h4 class="modal-title">Iterator JavaScript Exercise</h4>
                             </div>
                             <div class="modal-body">
-                                <ul class="nav nav-pills">
-                                    <li class="active col-md-2"><a href="#iterator data-toggle="pill" data-target="#iterator">Evaluation</a></li>
-                                </ul>
-                                <div class="tab-content">
+                                
+                                
                                     <!-- fizz buzz -->
-                                    <div id="fizzBuzz" class="tab-pane active row">
-                                        <input type="number" id="fBOne" />
-                                        <input type="number" id="fBTwo" />
+                                <div id="iterator" class="tab-pane active row">
+                                    <input type="number" id="starting" placeholder="Enter Starting Number" />
+                                    <input type="number" id="ending" placeholder="Enter Ending Number" />
 
-                                        <p id="fBResult"></p>
+                                    <p id="lst"></p>
 
-                                        <button onclick="fizzBuzz()">Evaluate FizzBuzz</button>
+                                    <button onclick="iterator()">Display</button>
 
 
-                                    </div>
                                 </div>
+                                    <div id="iteratorCode">
+                                        <pre class="brush: js">
+                                        function iterator() {
+                                        var start = Number(document.getElementById("starting").value);
+                                        var end = Number(document.getElementById("ending").value);
+                                        var list = "";
+
+                                        if (start < -250 || end > 250)
+                                        {
+                                            list = "Please enter starting and ending numbers between -250 and 250."
+                                        }
+                                        else
+                                        {
+                                            for (var i = start; i <= end; i += 1) {
+                                                list += i + " ";
+                                            }
+                                        }
+                                        document.getElementById("lst").innerHTML = list;
+                                    }
+
+                                        </pre>
+                                    </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

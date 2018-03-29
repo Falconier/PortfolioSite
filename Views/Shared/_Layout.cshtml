@@ -203,8 +203,25 @@
                 document.getElementById("facResult").innerHTML = result;
             }
         }
+        function iterator() {
+            var start = Number(document.getElementById("starting").value);
+            var end = Number(document.getElementById("ending").value);
+            var list = "";
+
+            if (start < -250 || end > 250)
+            {
+                list = "Please enter starting and ending numbers between -250 and 250."
+            }
+            else
+            {
+                for (var i = start; i <= end; i += 1) {
+                    list += i + " ";
+                }
+            }
+            document.getElementById("lst").innerHTML = list;
+        }
     </script>
-    @*<script>
+    <script>
         $(function () {
             resetBackgroundImage();
 
@@ -227,7 +244,7 @@
                 
             }
         });
-    </script>*@
+    </script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

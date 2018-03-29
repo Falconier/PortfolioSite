@@ -1,7 +1,7 @@
 ﻿<!-- Page Content
   ================================================== -->
 <!-- Hero -->
-<section class="hero">
+<section class="hero bkImg">
     <div class="container text-center">
         <div class="row">
             <div class="col-md-12">
@@ -73,7 +73,7 @@
 <!-- About -->
 <section class="about" id="about">
     <div class="container text-center">
-        <h2>
+        <h2 class="greenText">
             About Jacob
         </h2>
 
@@ -112,11 +112,11 @@
 <!-- Features -->
 <section class="features" id="features">
     <div class="container">
-        <h2 class="text-center">
+        <h2 class="text-center greenText">
             Current Project
         </h2>
 
-        <p>The current project is Bug Tracker that uses JavaScript, HTML, Bootstrap 4, and C#</p>
+        <p>The current project is a Bug Tracker that uses JavaScript, HTML, Bootstrap 4, and C#</p>
 
     </div>
 </section>
@@ -124,7 +124,7 @@
 <!-- Portfolio -->
 <section class="portfolio" id="portfolio">
     <div class="container text-center">
-        <h2>
+        <h2 class="text-center greenText">
             Portfolio
         </h2>
 
@@ -137,6 +137,7 @@
     <!-- Portfolio Image Link Grid -->
     <div class="portfolio-grid">
         <div class="row">
+            <!-- Modal One -->
             <div class="col-lg-3 col-sm-6 col-xs-12">
                 <div class="card card-block" data-toggle="modal" data-target="#myModal">
                     <!-- This Image -->
@@ -145,11 +146,11 @@
                         <div>
 
                             <h3 class="card-title">
-                                JavaScript Exercises
+                                Pick Five
                             </h3>
 
                             <p class="card-text">
-                                Work In Progress
+                                JavaScript Exercise
                             </p>
 
 
@@ -159,34 +160,39 @@
 
                 </div>
                 <div id="myModal" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-lg">
 
                         <!-- Modal content-->
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">JavaScript Exercises</h4>
+                                <h4 class="modal-title">Pick Five JavaScript Exercise</h4>
                             </div>
                             <div class="modal-body">
-                                <ul class="nav nav-pills">
-                                    <li class="active col-md-2"><a href="#pickFive" data-toggle="pill" data-target="#pickFive">Evaluation</a></li>
-                                </ul>
-                                <div class="tab-content">
-                                    <!-- pick five -->
-                                    <div id="pickFive" class="tab-pane active row">
-                                        <input type="number" id="v1" />
-                                        <input type="number" id="v2" />
-                                        <input type="number" id="v3" />
-                                        <input type="number" id="v4" />
-                                        <input type="number" id="v5" />
 
-                                        <p id="list2"></p>
-
-                                        <button onclick="pickFive()">Evaluate</button>
-
+                                <div id="pickFive" class="tab-pane active row">
+                                    <div class="col-lg-6 form-group">
+                                        <input type="number" id="v1" placeholder="blah" class="form-control" />
                                     </div>
+                                    <div class="col-lg-6 form-group">
+                                        <input type="number" id="v2" placeholder="blah" class="form-control" />
+                                    </div>
+                                    <div class="col-lg-6 form-group">
+                                        <input type="number" id="v3" placeholder="blah" class="form-control" />
+                                    </div>
+                                    <div class="col-lg-6 form-group">
+                                        <input type="number" id="v4" placeholder="blah" class="form-control" />
+                                    </div>
+                                    <div class="col-lg-6 form-group">
+                                        <input type="number" id="v5" placeholder="blah" class="form-control" />
+                                    </div>
+
+                                    <p id="list2"></p>
                                 </div>
-                                <div id="pickFiveCode" class="tab-content" style="display: none;">
+                                <div>
+                                    <button onclick="pickFive()">Evaluate</button>
+                                </div>
+                                <div id="pickFiveCode">
                                     <pre class="brush: js">
                                 function pickFive() {
                                 var one = Number(document.getElementById("v1").value);
@@ -214,7 +220,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Modal Two -->
             <div class="col-lg-3 col-sm-6 col-xs-12">
                 <div class="card card-block" data-toggle="modal" data-target="#myModal2">
 
@@ -222,30 +228,27 @@
                     <div class="portfolio-over">
                         <div>
                             <h3 class="card-title">
-                                Blog
+                                Fizz Buzz
                             </h3>
 
                             <p class="card-text">
-                                Future Project
+                                JavaScript Exercise
                             </p>
                         </div>
                     </div>
 
                 </div>
                 <div id="myModal2" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-lg">
 
                         <!-- Modal content-->
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">JavaScript Exercises</h4>
+                                <h4 class="modal-title">Fizz Buzz JavaScript Exercise</h4>
                             </div>
                             <div class="modal-body">
-                                <ul class="nav nav-pills">
-                                    <li class="active col-md-2"><a href="#pickFive" data-toggle="pill" data-target="#fizzBuzz">Evaluation</a></li>
-                                </ul>
-                                <div class="tab-content">
+                                
                                     <!-- fizz buzz -->
                                     <div id="fizzBuzz" class="tab-pane active row">
                                         <input type="number" id="fBOne" />
@@ -256,6 +259,102 @@
                                         <button onclick="fizzBuzz()">Evaluate FizzBuzz</button>
 
 
+                                    </div>
+                                    <div id="fizzBuzzCode">
+                                        <pre class="brush: js">
+                                        function fizzBuzz() {
+                                        var a = Number(fBOne.value);
+                                        var b = Number(fBTwo.value);
+                                        var result = "";
+
+                                        // review if statements and simplification
+                                        if ((a < 100 && a > 0) && (b < 100 && b > 0)){
+                                            for (var i = 1; i <= 100; i++) {
+                                                (function (i) {
+                                                    setTimeout(function () {
+                                                        if (i % a == 0 && i % b == 0)
+                                                            result += "fizzbuzz";
+                                                        else if (i % a == 0)
+                                                            result += "fizz";
+                                                        else if (i % b == 0)
+                                                            result += "buzz";
+                                                        else
+                                                            result += i + " ";
+
+                                                        document.getElementById("fBResult").innerHTML = result;
+                                                    }, 500);
+                                                })(i);
+                                            }
+                                       }
+                                    }
+                                    </pre>
+                                </div>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- Modal Three -->
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+                <div class="card card-block" data-toggle="modal" data-target="#myModal3">
+
+                    <img alt="" src="~/Assets/img/porf-2.jpg">
+                    <div class="portfolio-over">
+                        <div>
+                            <h3 class="card-title">
+                                Factorial
+                            </h3>
+
+                            <p class="card-text">
+                                JavaScript Exercise
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="myModal3" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Factorial JavaScript Exercise</h4>
+                            </div>
+                            <div class="modal-body">
+                                <ul class="nav nav-pills">
+                                    <li class="active col-md-2"><a href="#pickFive" data-toggle="pill" data-target="#fizzBuzz">Evaluation</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <!-- fizz buzz -->
+                                    <div id="factorial" class="tab-pane active row">
+                                        <input type="number" id="fac" />
+
+                                        <p id="facResult"></p>
+
+                                        <button onclick="factorial()">Evaluate Factorial</button>
+
+
+                                    </div>
+                                    <div id="fizzBuzzCode">
+                                        <pre class="brush: js">
+                                            function factorial() {
+                                                var a = Number(document.getElementById("fac").value);
+                                                var b = a;
+                                                var result = 1;
+                                                for (a; a != 0; a--)   
+                                                {
+                                                    result *= a;
+                                                }
+                                                document.getElementById("facResult").innerHTML = result;
+                                            }
+                                        </pre>
                                     </div>
                                 </div>
                             </div>
@@ -268,7 +367,85 @@
                 </div>
 
             </div>
+            <!-- Modal Four -->
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+                <div class="card card-block" data-toggle="modal" data-target="#myModal4">
 
+                    <img alt="" src="~/Assets/img/porf-4.jpg">
+                    <div class="portfolio-over">
+                        <div>
+                            <h3 class="card-title">
+                                Iterator
+                            </h3>
+
+                            <p class="card-text">
+                                JavaScript Exercise
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="myModal4" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Iterator JavaScript Exercise</h4>
+                            </div>
+                            <div class="modal-body">
+                                
+                                
+                                    <!-- fizz buzz -->
+                                <div id="iterator" class="tab-pane active row">
+                                    <input type="number" id="starting" placeholder="Enter Starting Number" />
+                                    <input type="number" id="ending" placeholder="Enter Ending Number" />
+
+                                    <p id="lst"></p>
+
+                                    <button onclick="iterator()">Display</button>
+
+
+                                </div>
+                                    <div id="iteratorCode">
+                                        <pre class="brush: js">
+                                        function iterator() {
+                                        var start = Number(document.getElementById("starting").value);
+                                        var end = Number(document.getElementById("ending").value);
+                                        var list = "";
+
+                                        if (start < -250 || end > 250)
+                                        {
+                                            list = "Please enter starting and ending numbers between -250 and 250."
+                                        }
+                                        else
+                                        {
+                                            for (var i = start; i <= end; i += 1) {
+                                                list += i + " ";
+                                            }
+                                        }
+                                        document.getElementById("lst").innerHTML = list;
+                                    }
+
+                                        </pre>
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <!-- Bug Tracker -->
             <div class="col-lg-3 col-sm-6 col-xs-12">
                 <div class="card card-block">
                     <a href="@Url.Action("ComingSoon","Home")">
@@ -288,6 +465,7 @@
                 </div>
             </div>
 
+            <!-- Financial Planner -->
             <div class="col-lg-3 col-sm-6 col-xs-12">
                 <div class="card card-block">
                     <a href="@Url.Action("ComingSoonFinancialPlanner","Home")">
@@ -306,46 +484,7 @@
                     </a>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div class="card card-block">
-                    <a href="#">
-                        <img alt="" src="~/Assets/img/porf-5.jpg">
-                        <div class="portfolio-over">
-                            <div>
-                                <h3 class="card-title">
-                                    Vehicle Project
-                                </h3>
-
-                                <p class="card-text">
-                                    Future Project
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <div class="card card-block">
-                    <a href="#">
-                        <img alt="" src="~/Assets/img/porf-6.jpg">
-                        <div class="portfolio-over">
-                            <div>
-                                <h3 class="card-title">
-                                    Mobile Project
-                                </h3>
-
-                                <p class="card-text">
-                                    Future Project
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
 
             <div class="col-lg-3 col-sm-6 col-xs-12">
                 <div class="card card-block">
