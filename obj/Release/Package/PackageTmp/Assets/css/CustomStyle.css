@@ -76,17 +76,17 @@ hr {
 .hero {
     display: table;
     position: relative;
-    
+    background-image: url(../img/DSC_0248.JPG);
     background-attachment: fixed;
     background-size: cover;
     padding: 150px 0;
     color: #fff;
-    width: 100%
-    height: 100vh;
+    width: 100% height: 100vh;
 }
+/*
 .bkImg {
     background-image: url(../img/DSC_0248.JPG);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-}
+}*/

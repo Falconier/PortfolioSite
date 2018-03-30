@@ -21,6 +21,15 @@ namespace PortfolioSite.Controllers
         {
             return View();
         }
+
+        public ActionResult ComingSoonXamarin()
+        {
+            return View();
+        }
+        public ActionResult DownForMaintenance()
+        {
+            return View();
+        }
         public ActionResult JSExercise()
         {
             return View();
