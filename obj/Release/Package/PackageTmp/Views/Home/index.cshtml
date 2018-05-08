@@ -1,8 +1,9 @@
-﻿<!-- Page Content
-  ================================================== -->
+﻿<!-- Page Content ================================================== -->
 <!-- Hero -->
+@model PortfolioSite.Models.ContactForm
+
 <section class="hero bkImg">
-    <div class="container text-center">
+    <div class="container2 text-center">
         <div class="row">
             <div class="col-md-12">
                 <!--<a class="hero-brand" href="index.html" title="Home"><img alt="Bell Logo" src="~/Assets/~/Assets/img/logo.png"></a>-->
@@ -40,34 +41,35 @@
         <ul class="nav-menu">
             <li><a href="#about">About</a></li>
             <li><a href="#features">Current Project</a></li>
-            <li><a href="@Url.Action("ComingSoon","Home")">Bug Tracker</a></li>
+            <li><a href="http://jacobbullinbugtracker.azurewebsites.net">Bug Tracker</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
             @*<li><a href="#team">Other Works</a></li>*@
             <!---<li class="menu-has-children"><a href="">Drop Down</a>
-              <ul>
-                <li><a href="#">Drop Down 1</a></li>
-                <li class="menu-has-children"><a href="#">Drop Down 2</a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-                <li><a href="#">Drop Down 5</a></li>
-              </ul>
-              -->
-            
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="menu-has-children"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+            -->
             @*<li><a href="#contact">Contact Us</a></li>*@
         </ul>
     </nav>
     <!-- #nav-menu-container -->
-    @*<nav class="nav social-nav pull-right d-none d-lg-inline">
-            <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-        </nav>*@
-    
+    <nav class="nav social-nav pull-right d-none d-lg-inline" style="padding-right:30px;">
+            <a href="https://github.com/Falconier"><i class="fa fa-github"></i></a> <a href="https://www.linkedin.com/in/jacob-emory-bullin-281032161/"><i class="fa fa-linkedin"></i></a> 
+        </nav>
+
 </header>
 <!-- #header -->
 <!-- About -->
@@ -106,7 +108,7 @@
                 </div>
             </div>-->
     </div>
-    
+
 </section>
 <!-- /About -->
 <!-- Features -->
@@ -181,6 +183,7 @@
                                         <input type="number" id="v3" placeholder="blah" class="form-control" />
                                     </div>
                                     <div class="col-lg-6 form-group">
+                                        D
                                         <input type="number" id="v4" placeholder="blah" class="form-control" />
                                     </div>
                                     <div class="col-lg-6 form-group">
@@ -248,20 +251,20 @@
                                 <h4 class="modal-title">Fizz Buzz JavaScript Exercise</h4>
                             </div>
                             <div class="modal-body">
-                                
-                                    <!-- fizz buzz -->
-                                    <div id="fizzBuzz" class="tab-pane active row">
-                                        <input type="number" id="fBOne" />
-                                        <input type="number" id="fBTwo" />
 
-                                        <p id="fBResult"></p>
+                                <!-- fizz buzz -->
+                                <div id="fizzBuzz" class="tab-pane active row">
+                                    <input type="number" id="fBOne" />
+                                    <input type="number" id="fBTwo" />
 
-                                        <button onclick="fizzBuzz()">Evaluate FizzBuzz</button>
+                                    <p id="fBResult"></p>
+
+                                    <button onclick="fizzBuzz()">Evaluate FizzBuzz</button>
 
 
-                                    </div>
-                                    <div id="fizzBuzzCode">
-                                        <pre class="brush: js">
+                                </div>
+                                <div id="fizzBuzzCode">
+                                    <pre class="brush: js">
                                         function fizzBuzz() {
                                         var a = Number(fBOne.value);
                                         var b = Number(fBTwo.value);
@@ -289,7 +292,7 @@
                                     }
                                     </pre>
                                 </div>
-                                
+
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -375,7 +378,7 @@
                     <div class="portfolio-over">
                         <div>
                             <h3 class="card-title">
-                                Iterator
+                                Palindrome
                             </h3>
 
                             <p class="card-text">
@@ -392,44 +395,37 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Iterator JavaScript Exercise</h4>
+                                <h4 class="modal-title">Palindrome JavaScript Exercise</h4>
                             </div>
                             <div class="modal-body">
-                                
-                                
-                                    <!-- fizz buzz -->
-                                <div id="iterator" class="tab-pane active row">
-                                    <input type="number" id="starting" placeholder="Enter Starting Number" />
-                                    <input type="number" id="ending" placeholder="Enter Ending Number" />
-
-                                    <p id="lst"></p>
-
-                                    <button onclick="iterator()">Display</button>
 
 
+                                <!-- palindrome -->
+                                <div id="palindrome" class="tab-pane active row">
+                                    <input type="text" id="word" placeholder="Enter A Word" />
+                                    <button onclick="palindrome()">Display</button>
+                                    <br />
+                                    <p id="palindromeResult"></p>
                                 </div>
-                                    <div id="iteratorCode">
-                                        <pre class="brush: js">
-                                        function iterator() {
-                                        var start = Number(document.getElementById("starting").value);
-                                        var end = Number(document.getElementById("ending").value);
-                                        var list = "";
-
-                                        if (start < -250 || end > 250)
+                                <div id="palindromeCode">
+                                    <pre class="brush: js">
+                                        function palindrome() 
                                         {
-                                            list = "Please enter starting and ending numbers between -250 and 250."
-                                        }
-                                        else
+                                        var word = String(document.getElementById("word").value);
+                                        var drow = word.split("").reverse().join("");
+                                        var result = "";
+                                        if (word == drow) 
                                         {
-                                            for (var i = start; i <= end; i += 1) {
-                                                list += i + " ";
-                                            }
+                                            result = "This is a palindrome! " + drow;
                                         }
-                                        document.getElementById("lst").innerHTML = list;
-                                    }
-
-                                        </pre>
-                                    </div>
+                                        else 
+                                        {
+                                            result = "This is NOT a palindrome.";
+                                        }
+                                        document.getElementById("palindromeResult").innerHTML = result;
+                                        }
+                                    </pre>
+                                </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -448,7 +444,7 @@
             <!-- Bug Tracker -->
             <div class="col-lg-3 col-sm-6 col-xs-12">
                 <div class="card card-block">
-                    <a href="@Url.Action("ComingSoon","Home")">
+                    <a href="http://jacobbullinbugtracker.azurewebsites.net">
                         <img alt="" src="~/Assets/img/DSC_0304.JPG">
                         <div class="portfolio-over">
                             <div>
@@ -468,16 +464,16 @@
             <!-- Financial Planner -->
             <div class="col-lg-3 col-sm-6 col-xs-12">
                 <div class="card card-block">
-                    <a href="@Url.Action("ComingSoonFinancialPlanner","Home")">
+                    <a href="http://jebbugtrackerservice.azurewebsites.net/swagger/ui/index">
                         <img alt="" src="~/Assets/img/DSC_0209.jpg">
                         <div class="portfolio-over">
                             <div>
                                 <h3 class="card-title">
-                                    Financial Planner
+                                    BugTracker API
                                 </h3>
 
                                 <p class="card-text">
-                                    Future Project
+                                    Current Project
                                 </p>
                             </div>
                         </div>
@@ -508,7 +504,7 @@
             <!-- Mobile App -->
             <div class="col-lg-3 col-sm-6 col-xs-12">
                 <div class="card card-block">
-                    <a href="@Url.Action("ComingSoonXamarin","Home")">
+                    <a href="https://github.com/Falconier/BugTrackerApp">
                         <img alt="" src="~/Assets/img/DSC_0499.JPG" />
                         <div class="portfolio-over">
                             <div>
@@ -517,7 +513,7 @@
                                 </h3>
 
                                 <p class="card-text">
-                                    Xamarin Project Coming Soon
+                                    BugTracker Xamarin App
                                 </p>
                             </div>
                         </div>
@@ -528,6 +524,70 @@
     </div>
 </section>
 <!-- /Portfolio -->
+<!-- Contact Me -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center greenText" style="color: #006633;">
+                    Contact Me
+                </h2>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+
+            <div class=" col-lg-3 col-md-4">
+                <div class=" info">
+                    <div>
+                        <i class="fa fa-map-marker" style="color: #006633;"></i>
+                        <p>Winston Salem, NC</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-envelope" style="color: #006633;"></i>
+                        <p>jbullin.engstudio@icloud.com</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone" style="color: #006633;"></i>
+                        <p>+1-336-414-2454</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-8">
+                @using (Html.BeginForm("ContactMe", "Home", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-group">
+                        <input type="text" name="FromName" class="form-control" id="name" placeholder="Full Name" data-rule="minlen:3" data-msg="Please enter at least 3 chars" />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="FromEmail" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                        <div class="validation"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:8" data-msg="Please enter at least 8 chars of subject" />
+                        <div class="validation"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" name="body" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                        <div class="validation"></div>
+                    </div>
+
+                    <input type="submit" value="Send" style=" color: white; background-color: #006633;" />
+                }
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
 
 <script src="~/Assets/lib/jquery/jquery.min.js"></script>
 <script>

@@ -68,6 +68,13 @@ hr {
     margin-bottom: 20px;
 }
 
+.mastercolumn{
+    float: none;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
 /* =============================
     Hero Override
     =============================*/

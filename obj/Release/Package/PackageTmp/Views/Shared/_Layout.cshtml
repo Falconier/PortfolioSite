@@ -36,7 +36,7 @@
     <!-- Main Stylesheet File -->
     <link href="~/Assets/css/style.css" rel="stylesheet">
 
-    <link href="~/Assets/css/CustomStyle.css" rel="stylesheet" />
+    <link href="~/Assets/css/AlterAccess.css" rel="stylesheet" />
 
     <!-- Syntax Highlighter -->
 
@@ -75,7 +75,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+                    @*<div class="col-lg-6 col-xs-12 text-lg-right text-center">
                         <ul class="list-inline">
                             <li class="list-inline-item">
                                 <a href="#">Home</a>
@@ -84,7 +84,7 @@
                                 <a href="#contact">Contact</a>
                             </li>
                         </ul>
-                    </div>
+                    </div>*@
 
                 </div>
             </div>
@@ -93,8 +93,8 @@
 
     <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
 
-    <!-- Required 
-        
+    <!-- Required
+
         Libraries -->
     <script src="~/Assets/lib/jquery/jquery.min.js"></script>
     <script src="~/Assets/lib/jquery/jquery-migrate.min.js"></script>
@@ -191,17 +191,27 @@
             var end = Number(document.getElementById("ending").value);
             var list = "";
 
-            if (start < -250 || end > 250)
-            {
+            if (start < -250 || end > 250) {
                 list = "Please enter starting and ending numbers between -250 and 250."
             }
-            else
-            {
+            else {
                 for (var i = start; i <= end; i += 1) {
                     list += i + " ";
                 }
             }
             document.getElementById("lst").innerHTML = list;
+        }
+        function palindrome() {
+            var word = String(document.getElementById("word").value);
+            var drow = word.split("").reverse().join("");
+            var result = "";
+            if (word == drow) {
+                result = "This is a palindrome! " + drow;
+            }
+            else {
+                result = "This is NOT a palindrome.";
+            }
+            document.getElementById("palindromeResult").innerHTML = result;
         }
     </script>
     <script>
@@ -217,14 +227,14 @@
                 var yShift = 0;
                 var windowX = $(window).width();
                 var windowY = $(window).height();
-                xShift = (6000-(windowX / 2)) + 'px';
+                xShift = (6000 - (windowX / 2)) + 'px';
                 yShift = (4000 - (windowY / 2)) + 'px';
 
                 xShift = 6000 - xShift;
                 yShift = 4000 - yShift;
 
                 $('.hero').css({ 'margin-left': xShift, 'margin-top': yShift });
-                
+
             }
         });
     </script>

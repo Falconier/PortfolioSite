@@ -245,6 +245,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ContactForm.cs" />
+    <Compile Include="Models\Email.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MeViewModels.cs" />
@@ -258,7 +260,7 @@
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
     <Content Include="Assets\contactform\contactform.js" />
     <Content Include="Assets\contactform\readme.txt" />
-    <Content Include="Assets\css\CustomStyle.css" />
+    <Content Include="Assets\css\AlterAccess.css" />
     <Content Include="Assets\css\scss-files.txt" />
     <Content Include="Assets\css\style.css" />
     <Content Include="Assets\img\code1.jpg" />
@@ -301,6 +303,7 @@
     <Content Include="Views\Home\AdvancedJSandJQueryExercise.cshtml" />
     <Content Include="Views\Home\CalculatorExercise.cshtml" />
     <Content Include="Views\Home\AlarmClock.cshtml" />
+    <Content Include="private.config" />
     <None Include="Properties\PublishProfiles\JacobBullinPortfolioSite - Web Deploy.pubxml" />
     <Content Include="Views\Home\ComingSoon.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />

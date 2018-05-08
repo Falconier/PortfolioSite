@@ -1,6 +1,7 @@
-﻿<!-- Page Content
-  ================================================== -->
+﻿<!-- Page Content ================================================== -->
 <!-- Hero -->
+@model PortfolioSite.Models.ContactForm
+
 <section class="hero bkImg">
     <div class="container2 text-center">
         <div class="row">
@@ -41,6 +42,8 @@
             <li><a href="#about">About</a></li>
             <li><a href="#features">Current Project</a></li>
             <li><a href="http://jacobbullinbugtracker.azurewebsites.net">Bug Tracker</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
             @*<li><a href="#team">Other Works</a></li>*@
             <!---<li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
@@ -63,9 +66,9 @@
         </ul>
     </nav>
     <!-- #nav-menu-container -->
-    @*<nav class="nav social-nav pull-right d-none d-lg-inline">
-            <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
-        </nav>*@
+    <nav class="nav social-nav pull-right d-none d-lg-inline" style="padding-right:30px;">
+            <a href="https://github.com/Falconier"><i class="fa fa-github"></i></a> <a href="https://www.linkedin.com/in/jacob-emory-bullin-281032161/"><i class="fa fa-linkedin"></i></a> 
+        </nav>
 
 </header>
 <!-- #header -->
@@ -461,16 +464,16 @@
             <!-- Financial Planner -->
             <div class="col-lg-3 col-sm-6 col-xs-12">
                 <div class="card card-block">
-                    <a href="@Url.Action("ComingSoonFinancialPlanner","Home")">
+                    <a href="http://jebbugtrackerservice.azurewebsites.net/swagger/ui/index">
                         <img alt="" src="~/Assets/img/DSC_0209.jpg">
                         <div class="portfolio-over">
                             <div>
                                 <h3 class="card-title">
-                                    Financial Planner
+                                    BugTracker API
                                 </h3>
 
                                 <p class="card-text">
-                                    Future Project
+                                    Current Project
                                 </p>
                             </div>
                         </div>
@@ -501,7 +504,7 @@
             <!-- Mobile App -->
             <div class="col-lg-3 col-sm-6 col-xs-12">
                 <div class="card card-block">
-                    <a href="@Url.Action("ComingSoonXamarin","Home")">
+                    <a href="https://github.com/Falconier/BugTrackerApp">
                         <img alt="" src="~/Assets/img/DSC_0499.JPG" />
                         <div class="portfolio-over">
                             <div>
@@ -510,7 +513,7 @@
                                 </h3>
 
                                 <p class="card-text">
-                                    Xamarin Project Coming Soon
+                                    BugTracker Xamarin App
                                 </p>
                             </div>
                         </div>
@@ -521,17 +524,68 @@
     </div>
 </section>
 <!-- /Portfolio -->
+<!-- Contact Me -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center greenText" style="color: #006633;">
+                    Contact Me
+                </h2>
+            </div>
+        </div>
 
-<section class="about" id="contact">
-    <div class="container text-center">
-        <h2 class="text-center greenText">
-            Contact Me
-        </h2>
-        <p>Test</p>
+
+        <div class="row justify-content-center">
+
+            <div class=" col-lg-3 col-md-4">
+                <div class=" info">
+                    <div>
+                        <i class="fa fa-map-marker" style="color: #006633;"></i>
+                        <p>Winston Salem, NC</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-envelope" style="color: #006633;"></i>
+                        <p>jbullin.engstudio@icloud.com</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone" style="color: #006633;"></i>
+                        <p>+1-336-414-2454</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-8">
+                @using (Html.BeginForm("ContactMe", "Home", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-group">
+                        <input type="text" name="FromName" class="form-control" id="name" placeholder="Full Name" data-rule="minlen:3" data-msg="Please enter at least 3 chars" />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="FromEmail" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                        <div class="validation"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:8" data-msg="Please enter at least 8 chars of subject" />
+                        <div class="validation"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" name="body" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                        <div class="validation"></div>
+                    </div>
+
+                    <input type="submit" value="Send" style=" color: white; background-color: #006633;" />
+                }
+            </div>
+        </div>
     </div>
-    <div>
-        @Html.BeginForm("ContactMe","Home", FormMethod.Post)
-    </div>
+
+
 </section>
 
 
